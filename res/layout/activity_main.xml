@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/cardview_light_background"
+    android:background="#ff5e3a">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginRight="@android:dimen/app_icon_size"
+       android:layout_marginLeft="@android:dimen/app_icon_size"
+       android:layout_marginTop="@android:dimen/notification_large_icon_width">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="Login"
+           android:textColor="#204969"
+           android:textStyle="bold"
+           android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+           android:layout_marginBottom="@dimen/activity_vertical_margin"
+           />
+       <EditText
+           android:id="@+id/editText1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:background="@drawable/rounded_corner"
+           android:inputType="textEmailAddress"
+           style="@style/MyEditTextStyle"
+           android:hint="Username"
+           android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+       <EditText
+           android:id="@+id/editText2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:background="@drawable/rounded_corner"
+           style="@style/MyEditTextStyle"
+           android:layout_marginTop="5dp"
+           android:inputType="textPassword"
+           android:hint="Password"
+           android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+       <Spinner
+           android:id="@+id/spinner1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="end"></Spinner>
+
+       <Button
+           android:id="@+id/login"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/rounded_corner2"
+           android:textColor="@android:color/background_light"
+           android:textAppearance="@style/TextAppearance.AppCompat.Large"
+           android:text="login"/>
+       <Button
+           android:id="@+id/signup"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/rounded_corner2"
+           android:textColor="@android:color/background_light"
+           android:textAppearance="@style/TextAppearance.AppCompat.Large"
+           android:text="signup"/>
+   </LinearLayout>
+</android.support.constraint.ConstraintLayout>
